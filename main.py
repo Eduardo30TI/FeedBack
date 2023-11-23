@@ -45,7 +45,6 @@ def main():
             send_dict={'To':['ti@demarchisaopaulo.com.br'],'CC':[''],'Anexo':[]}
 
             mensagem='\n'.join([f'<p>{m.strip()}</p>' for m in temp_dict['mensagem'].split('\n')])
-            print(mensagem)      
 
             mail.Enviar(assunto=temp_dict['assunto'],mensagem=mensagem,info=send_dict)
 
@@ -53,7 +52,7 @@ def main():
             time.sleep(1)
             mensagem.empty()
             time.sleep(1)
-            #streamlit_js_eval(js_expressions='parent.window.location.reload()')
+            streamlit_js_eval(js_expressions='parent.window.location.reload()')
 
             pass
 
