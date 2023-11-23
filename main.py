@@ -42,7 +42,7 @@ def main():
 
             mail=Mail()
 
-            send_dict={'To':['ti@demarchisaopaulo.com.br'],'CC':[''],'Anexo':[]}
+            send_dict={'To':['feedback@demarchisaopaulo.com.br'],'CC':[''],'Anexo':[]}
 
             mensagem='\n'.join([f'<p>{m.strip()}</p>' for m in temp_dict['mensagem'].split('\n')])
 
