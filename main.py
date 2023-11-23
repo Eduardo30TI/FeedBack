@@ -47,6 +47,7 @@ def main():
             mensagem='\n'.join([f'<p>{m.strip()}</p>' for m in temp_dict['mensagem'].split('\n')])
 
             mail.Enviar(assunto=temp_dict['assunto'],mensagem=mensagem,info=send_dict)
+            time.sleep(1)
 
             mensagem=st.success('E-mail enviado com sucesso')
             time.sleep(1)
